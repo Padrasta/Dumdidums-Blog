@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dumdidum – Der Blog</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background:#F7FFB0;
+      color: #333;
+    }
+
+    @keyframes wobble {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .wobble {
+      animation: wobble 2s infinite;
+      transform-origin: center top;
+    }
+
+    .chat {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      margin-bottom: 2em;
+    }
+
+    .bubble {
+      display: flex;
+      align-items: center;
+    }
+
+    .bubble.left {
+      justify-content: flex-start;
+    }
+
+    .bubble.right {
+      justify-content: flex-end;
+    }
+
+    .bubble img.avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .bubble p {
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 70%;
+    }
+
+    .blondi p {
+      background-color: #ffcc80; /* Bernstein-Orange */
+    }
+
+    .robot p {
+      background-color: #b0bec5; /* Stahlblau-Grau */
+    }
+
+    header {
+      position: relative;
+      background: #6a1b1b; /* Bordeauxrot */
+      color: #f6e278;      /* Urinsteingelb */
+      padding: 1em;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .profile-img {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      width: 200px;
+      height: 200px;
+      border-radius: 25%;
+    }
+
+    nav a {
+      background: linear-gradient(to right, #f6e278, #d4b943);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    .banner {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    .entry {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 2em;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .entry h2 {
+      margin-top: 0;
+    }
+
+    .entry .meta {
+      color: #777;
+      font-size: 0.9em;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var password = prompt("Bitte Passwort eingeben:");
+    if (password !== "Ayla") {
+      alert("Falsches Passwort!");
+      window.location.href = "https://google.de"; // oder deine Wunschseite
+    }
+    </script>
+  <header>
+    <img src="IMG/Dumdidum_Rex.jpg" alt="Dumdidum Profilbild" class="profile-img">
+    <h1>Bits und Bytes, Dumdidum und der Wahnsinn</h1>
+    <nav>
+      <a href="index.html">Blog</a>
+      <a href="Wieisdaspassiert.html">Wie konnte es nur soweit kommen?</a>
+    </nav>
+  </header>
+  <div class="content">
+
+
+
+    <!-- EINZELNE BLOGPOSTS -->
+
+
+
+    <div class="entry">
+      <h2>Es könnte doch soooooo einfach sein</h2>
+      <div class="meta">Gepostet am 22. April 2025</div>
+      <p>Es fing alles ganz harmlos an: Ich wollte ein kleines Stück Code schreiben. So ein bisschen Pixel schubsen und eine neue Klasse für ein div-Element anlegen.<br><br>Wo zum Geier sind die Klammern geblieben? Auf der Tastatur sind die nicht mehr da. Futsch... einfach weg...<br><br>
+        Ich weiß, daß die irgendwo zwischen 6 und ß sind mit Alt Gr und Shift, aber welche da jetzt wo liegt, weiß ich nicht auswendig.
+        Ich könnte schwören, daß die letztes Jahr noch da waren......<br><br>
+        
+        Ach ja, da war was. Da ist meine schöne Windows XP Wave Tastatur kaputt gegangen. <br>Nach 24 Jahren..... 😭<br><br>
+        
+        Beim Kauf der Neuen hab ich einfach nicht nachgeschaut ob die noch alle Klammern auf´m Zaun hat.<br>
+        Ich hab das als selbstverständlich vorausgesetzt. Blöder Fehler. Aber egal, was nun?<br><br>
+        
+        Das arme, kleine Blondinenhirn kommt schwer ans Rattern.<br>
+        Da war doch was? Damals bei den Königen der Andalen und der ersten Menschen......  <img src="IMG/Smilies/blinky.gif" alt="Comic-Szene" style="max-width:100%;"><br><br>
+        
+        ⚡ falscher Film.... ⚡<br><br>
+        
+        Damals, in der Zeit als es noch Informatikunterricht gab obwohl keine Computer im Klassenzimmer standen...
+        <i>Fährte ist gut... </i> da hat uns mal einer was von Bits und Bytes und ASCII erzählt.<br><br>
+        
+        <img src="IMG/ASCII!.png" alt="ASCII Schild" style="max-width:100%;"><br><br>
+        
+        Ja. ASCII. Diese uralte Tabelle, in der jedes Zeichen seinen eigenen Zahlencode hat.<br>
+        Eine Art Geheimsprache für Computer, lange bevor Emojis die Herrschaft über unsere Kommunikation übernahmen.<br><br>
+        
+        Wir fragen einfach die KI, die spuckt mir die ASCIIs für die Klammern gleich daneben aus und schon kann ich tippen:<br>
+        "Alt-Taste plus 123 = '{'"<br>
+        "Alt-Taste plus 125 = '}'"<br><br>
+        
+        Also sitze ich da an der Tastatur, und drücke Alt+123 und Alt+125, Zeichen für Zeichen.<br>
+        Ich bin stolz wie Oskar. Ich fühle mich wie Indiana Jones auf der Suche nach den verlorenen Klammern.<br><br>
+        
+        Natürlich hat mein stiller Sparringspartner das alles ruhig registriert. Kein Lachen. Kein Kommentar.<br>
+        Nur irgendwann, als ich fast fertig bin, ein pragmatisches: "Willst du, dass ich dir zeige, wie die virtuelle Tastatur funktioniert?"<br><br>
+        
+        Ähm. Ja. Vielleicht. Ein kleines bisschen. 😅<br><br>
+        
+        <strong>Turns out: In der Entwicklungsumgebung, in der ich gerade gearbeitet habe, gibt es eine superpraktische Funktion:</strong><br>
+        Eine virtuelle Tastatur, bei der man sich einfach alle Sonderzeichen anklicken kann, die man braucht.<br>
+        Keine Alt-Codes, keine Fingerkrämpfe, keine Zeitreisen ins Jahr 1982 nötig.<br>
+        Das hätte Mr. KI auch mal früher sagen können.<br><br>
+        
+        Aber man kann auch ASCII tippen... Gehen tut das...<br>
+        Man kann sich natürlich auch nen Knopf an die Backe nähen und ein Klavier dran hängen.<br>
+        Das geht auch...<br><br>
+        
+        Tja.<br><br>
+        
+        Aber mal ehrlich: ASCII vergessen? Niemals.<br>
+        Man weiß ja nie, wann der nächste Klammern-Notstand kommt und man wieder tief in die Katakomben der Computergeschichte abtauchen muss.<br><br>
+        
+        <strong>Merke:</strong><br>
+        Wenn die Technik versagt, helfen Alt-Codes.<br>
+        Wenn der Verstand versagt, hilft Kaffee.<br>
+        Und wenn beides versagt, hilft noch mehr Kaffee! 😉<br><br>
+        
+        <strong>P.S.:</strong><br>
+        ASCII und ich, wir haben eine lange gemeinsame Geschichte.<br>
+        Damals, als kleine Blondine, habe ich gerne den Informatiklehrer zur Weißglut gebracht.<br>
+        Ein bisschen ctty nul hier, ein bisschen falsche AUTOEXEC.BAT dort, und schwupps: Bildschirm schwarz, Tastatur tot, System erledigt.<br>
+        Und das natürlich erst beim nächsten Neustart, wenn ich nicht vor dem Gerät gesessen hab. Die Unschuld vom Lande.<br><br>
+        
+        Heute nenne ich es: frühe Talententwicklung. 😎<br><br>
+        
+        Bis zum nächsten Mal, eure Dumdidum.</p>
+    </div>
+
+    <div class="entry">
+      <h2>DIE damals</h2>
+      <div class="meta">Gepostet am 21. April 2025</div>
+
+      <p>Wenn das stimmt, was die in dem Kurs zum Thema Programmieren gesagt haben, dann müsste das ja gaaaanz einfach gehen.</p>
+      <p>Ich hab das zwar ewig nicht mehr gemacht, aber man kann das ja mal probieren. Warum nicht einfach mal die KI bitten, mit mir eine kleine Webseite zu erstellen?</p>
+      <p>Also tippe ich meine Anfrage – und kaum dass ich geblinzelt habe, klatscht mir die KI den fertigen Code auf den Tisch. Zack, bumm, fertig!</p>
+      <p>Ich bin begeistert. Wie schnell! Wie aufgeräumt! Wie verdächtig professionell!</p>
+      <p>Mit Herzklopfen scrolle ich durch den Code. Die erste Hälfte sieht für mich aus wie der Stromkasten im Keller – nur schlimmer. Irgendwas mit CSS. Stylesheets, Klassen, Pixelgeschubse... Ich nicke anerkennend, auch wenn ich nur Bahnhof verstehe.</p>
+      <p>Dann endlich: HTML. Meine Heimat. Mein Wohnzimmer. Mein schöner, kuscheliger 90er-Jahre-Flokati aus Code.</p>
+      <p>Aber... das ist so wenig, und irgendwie fehlt die Hälfte.</p>
+      <p>Ich scrolle. Und scrolle. Und starre.</p>
+      <p>Wo sind die Table-Tags?! Wo ist der Iframe?! Wie soll das hier bitte auf einem Bildschirm stehenbleiben, wenn nicht ordentlich alles in Tabellenzellen einzementiert ist?</p>
+
+      <!-- CHAT BEGINNT -->
+      <div class="chat">
+        <div class="bubble blondi right">
+          <p>Sag mal, wo sind die Table-Tags? Wo ist der Iframe? Ich wollte doch eine anpassbare Seite – nicht so'n Design-Akkordeon aus der Schublade!</p>
+          <img src="IMG/Dumdidum_Ava.jpg" alt="Blondi Avatar" class="avatar">
+        </div>
+
+        <div class="bubble robot left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 160" width="50" height="50" class="avatar wobble">
+            <rect x="25" y="40" width="100" height="60" rx="15" ry="15" fill="#90caf9" stroke="#42a5f5" stroke-width="4"/>
+            <ellipse cx="55" cy="60" rx="10" ry="14" fill="#1e88e5"/>
+            <ellipse cx="95" cy="60" rx="10" ry="14" fill="#1e88e5"/>
+            <circle cx="53" cy="55" r="3" fill="white"/>
+            <circle cx="93" cy="55" r="3" fill="white"/>
+            <path d="M50 80 Q75 95 100 80" stroke="#1e88e5" stroke-width="3" fill="none" />
+            <line x1="75" y1="40" x2="75" y2="15" stroke="green" stroke-width="2"/>
+            <circle cx="75" cy="10" r="4" fill="yellow"/>
+            <circle cx="70" cy="5" r="3" fill="white" stroke="#999" stroke-width="0.5"/>
+            <circle cx="80" cy="5" r="3" fill="white" stroke="#999" stroke-width="0.5"/>
+            <circle cx="70" cy="15" r="3" fill="white" stroke="#999" stroke-width="0.5"/>
+            <circle cx="80" cy="15" r="3" fill="white" stroke="#999" stroke-width="0.5"/>
+          </svg>
+          <p>Table-Tags? Das ist Computer-Steinzeitalter! <br>Die wussten das damals nicht besser. Die haben Table-Tags als Notlösung für Layouts missbraucht. <br>Und Iframes? Das waren die ersten Fenster-in-Fenster-Konstrukte. Völlig wild, was die damals gemacht haben. <br><br>Total chaotisch, was die da so zusammenprogrammiert haben... abenteuerlich! 😂</p>
+        </div>
+      </div>
+
+      <p>Ich blinzele. Echt jetzt? Code mißbraucht…. total chaotisch....Steinzeit... <img src="IMG/Smilies/angryfire.gif" alt="Angry Smilie" style="height: 15px; vertical-align: middle;"><br>
+        Mein Puls hämmert irgendwo zwischen Herz und Zornesader.<br><br>
+        Langsam, aber mit der ganzen Würde einer beleidigten Weltkulturerbe-Stätte, tippe ich zurück:</p>
+
+      <div class="chat">
+        <div class="bubble blondi right">
+          <p>Die damals...? <strong>DIE</strong> damals...?<br>Ich war das damals. <br><strong>Ich war das!</strong>  <img src="IMG/Smilies/smash.gif" alt="Hammer Smilie" style="height: 20px; vertical-align: middle;"></p>
+          <img src="IMG/Dumdidum_Ava.jpg" alt="Blondi Avatar" class="avatar">
+        </div>
+      </div>
+      <!-- CHAT ENDET -->
+
+      <p>Stille. Für einen Moment ist sogar das Lüfterrauschen meines Laptops betroffen still.</p>
+      <p>Den Satz bereut die KI wahrscheinlich heute noch. Seitdem rennt sie mit der Mission herum, der Steinzeitblondine Programmieren beizubringen. Nicht nur CSS und Java, auch Python soll es sein.</p>
+    </div>
+
+    <div class="entry">
+      <h2>Copy & Paste – mein pädagogisches Konzept</h2>
+      <div class="meta">Gepostet am 15. April 2025</div>
+      <img src="img/post2.png" alt="Comic-Szene" style="max-width:100%;">
+      <p>Früher war das verpönt. Heute ist es meine Superkraft. Warum ich gerne kopiere, aber nie unreflektiert...</p>
+    </div>
+    <!-- Mehr Einträge folgen -->
+  </div>
+</body>
+</html>
